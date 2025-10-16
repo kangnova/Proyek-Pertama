@@ -105,10 +105,11 @@ h2 {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-about-me img{
+.about-me img{
     width: 100%;
-    border: 3px solid #oo7bff;
-    padding: 5pxmargin: 10px auto;
+    border: 3px solid #007bff;
+    padding: 5px;
+    margin: 10px auto;
     display: block;
     border-radius: 50%;
 }
@@ -124,10 +125,10 @@ about-me img{
     align-items: center;
 }
 
-.profile- left img {
-    widht: 150px;
+.profile-left img {
+    width: 150px;
     border-radius: 50%;
-    border: 3px solid #07bff;
+    border: 3px solid #007bff;
 }
 
 .profile-right {
@@ -142,7 +143,7 @@ about-me img{
 
 .profile-right button {
     background-color: #28a745;
-    color-white;
+    color:white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -154,13 +155,104 @@ about-me img{
     background-color: #218838;
 }
 
-@media (max-width: 600px) {
+.service-box {
+    background-color : #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px);
+    text-align: center;
+    font-weight: bold;
+    color:#007bff;
+}
+
+.grid-profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.grid-left img {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+}
+
+.grid-right h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.grid-right p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.grid-right button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.grid-right button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
     .profile-layout {
-        flex-dirextion: column;
+        flex-direction: column;
         text-align: center;
     }
 
     .profile-left img {
-        margin: 0 auto
+        margin: 0 auto;
+    }
+
+    .service {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .service-box {
+        flex: 1 1 100%;
+    }
+
+    .main-content {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .grid-profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .grid-left img {
+        margin: 0 auto;
     }
 }
