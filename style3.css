@@ -313,6 +313,54 @@ background-color: #218838;
     background-color: #0056b3;
 }
 
+.contact-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.contact-form h2{
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.cintact-form button {
+    background-color: #00tbff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    backgroubd-color: #0056b3;
+}
+
 
 @media (max-width: 768px) {
     .profile-layout {
@@ -381,5 +429,21 @@ background-color: #218838;
 
     .project-card {
         width: 100%;
+    }
+
+    .contact-form {
+        psdding: 20px;
+    }
+
+    .contact-form h2 {
+        fontsize: 20px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
     }
 }
